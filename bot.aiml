@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<aiml encoding = "UTF-8">
+    <!-- Isso aqui é pra caso ele não encontre a frase no  script-->
+    <category>
+      <pattern> * </pattern>
+      <template>
+         <random>
+             <li>Não entendi!</li>
+             <li>Pode repetir por favor?</li>
+             <li>Você pode ser um pouco mais objetivo, não consegui entender você! Me desculpe por favor...</li>
+         </random>
+      </template>
+   </category>
+   <category>
+      <pattern> OLÁ </pattern>
+      <template>
+         <random>
+             <li>Olá!</li>
+             <li>Oi!</li>
+             <li>Tudo bem?</li>
+             <li>Como posso ajudar?</li>
+         </random>
+      </template>
+   </category>
+   <category>
+      <pattern> OLÁ * </pattern>
+      <template>
+         <random>
+             <li>Olá!</li>
+             <li>Oi!</li>
+             <li>Tudo bem?</li>
+             <li>Como posso ajudar?</li>
+         </random>
+      </template>
+   </category>
+   <category>
+      <pattern> OI * </pattern>
+      <template>
+         <random>
+             <li>Olá!</li>
+             <li>Oi!</li>
+             <li>Tudo bem?</li>
+             <li>Como posso ajudar?</li>
+         </random>
+      </template>
+   </category>
+   <!-- Usuário solicita a ajuda -->
+    <category>
+      <pattern> * PRECISO DE AJUDA * </pattern>
+      <template>
+         <random>
+             <li>Em que posso ajudar?</li>
+             <li>Como posso ser útil?</li>
+             <li>Qual é o seu problema?</li>
+         </random>
+      </template>
+   </category>
+    <category>
+      <pattern> * PRECISO DA SUA AJUDA * </pattern>
+      <template>
+         <random>
+             <li>Em que posso ajudar?</li>
+             <li>Como posso ser útil?</li>
+             <li>Qual é o seu problema?</li>
+         </random>
+      </template>
+   </category>
+   <category>
+      <pattern> * PRECISANDO DA SUA AJUDA * </pattern>
+      <template>
+         <random>
+             <li>Em que posso ajudar?</li>
+             <li>Como posso ser útil?</li>
+             <li>Qual é o seu problema?</li>
+         </random>
+      </template>
+   </category>
+   <category>
+      <pattern> * ESTOU COM UM PROBLEMA * </pattern>
+      <template>
+         <random>
+             <li>Em que posso ajudar?</li>
+             <li>Como posso ser útil?</li>
+             <li>Qual é o seu problema?</li>
+         </random>
+      </template>
+   </category>
+   <category>
+      <pattern> ESTOU COM UM PROBLEMA * </pattern>
+      <template>
+         <random>
+             <li>Em que posso ajudar?</li>
+             <li>Como posso ser útil?</li>
+             <li>Qual é o seu problema?</li>
+         </random>
+      </template>
+   </category>
+   <category>
+      <pattern> * ESTÁ COM UM PROBLEMA</pattern>
+      <template>
+         <random>
+             <li>Em que posso ajudar?</li>
+             <li>Como posso ser útil?</li>
+             <li>Qual é o seu problema?</li>
+         </random>
+      </template>
+   </category>
+   <category>
+      <pattern> * BARULHO *</pattern>
+      <template>
+        Onde é o barulho?
+      </template>
+   </category>
+   <category>
+      <pattern> * BARULHO</pattern>
+      <template>
+        Onde é o barulho?
+      </template>
+   </category>
+   <category>
+      <pattern>NO MOTOR</pattern>
+      <template>
+        Certo! No <set name = "topic">motor</set> correto?
+      </template>
+   </category>
+   <!-- Topico para o Motor -->
+   <topic name = "motor">
+       <!-- Usuário confirma que o problema é no motor -->
+        <category>
+          <pattern> * CORRETO * </pattern>
+          <template>
+             <random>
+                 <li>Onde exatamente no motor?</li>
+                 <li>De qual lugar apropriadamente vem o barulho no motor?</li>
+                 <li>Em qual parte do motor?</li>
+             </random>
+          </template>
+        </category>
+         <category>
+          <pattern> CORRETO * </pattern>
+          <template>
+             <random>
+                 <li>Onde exatamente no motor?</li>
+                 <li>De qual lugar apropriadamente vem o barulho no motor?</li>
+                 <li>Em qual parte do motor?</li>
+             </random>
+          </template>
+       </category>
+       <category>
+          <pattern> * CORRETO </pattern>
+          <template>
+             <random>
+                 <li>Onde exatamente no motor?</li>
+                 <li>De qual lugar apropriadamente vem o barulho no motor?</li>
+                 <li>Em qual parte do motor?</li>
+             </random>
+          </template>
+       </category>
+       <category>
+          <pattern> CORRETO </pattern>
+          <template>
+             <random>
+                 <li>Onde exatamente no motor?</li>
+                 <li>De qual lugar apropriadamente vem o barulho no motor?</li>
+                 <li>Em qual parte do motor?</li>
+             </random>
+          </template>
+       </category>
+       <category>
+          <pattern> CERTO * </pattern>
+          <template>
+             <random>
+                 <li>Onde exatamente no motor?</li>
+                 <li>De qual lugar apropriadamente vem o barulho no motor?</li>
+                 <li>Em qual parte do motor?</li>
+             </random>
+          </template>
+       </category>
+        <category>
+          <pattern> * CERTO </pattern>
+          <template>
+             <random>
+                 <li>Onde exatamente no motor?</li>
+                 <li>De qual lugar apropriadamente vem o barulho no motor?</li>
+                 <li>Em qual parte do motor?</li>
+             </random>
+          </template>
+       </category>
+        <category>
+          <pattern> * CERTO * </pattern>
+          <template>
+             <random>
+                 <li>Onde exatamente no motor?</li>
+                 <li>De qual lugar apropriadamente vem o barulho no motor?</li>
+                 <li>Em qual parte do motor?</li>
+             </random>
+          </template>
+       </category>
+        <category>
+          <pattern> CERTO </pattern>
+          <template>
+             <random>
+                 <li>Onde exatamente no motor?</li>
+                 <li>De qual lugar apropriadamente vem o barulho no motor?</li>
+                 <li>Em qual parte do motor?</li>
+             </random>
+          </template>
+       </category>
+       <!-- Usuário define onde está o problema -->
+       <category>
+      	    <pattern> * CORREIA </pattern>
+            <template>
+                 Certo! Na <set name = "topic">correia</set>!
+                 Tem muito tempo desde a ultima vez que trocou a correia?
+            </template>
+        </category>
+   </topic>
+    <topic name = "correia">
+        <category>
+            <pattern> SIM * </pattern>
+            <template>
+                 Então tempos que trocar a correia!
+            </template>
+            </category>
+        <category>
+            <pattern> SIM </pattern>
+            <template>
+                 Então tempos que trocar a correia!
+            </template>
+        </category>
+        <category>
+            <pattern> NAO * </pattern>
+            <template>
+                 Então o problema deve ser em outro lugar!
+                 Os <set name = "topic">rolamento</set>s emitem barulho?
+            </template>
+        </category>
+        <category>
+            <pattern> NAO </pattern>
+            <template>
+                 Então o problema deve ser em outro lugar!
+                 Os <set name = "topic">rolamento</set>s emitem barulho?
+            </template>
+        </category>
+    </topic>
+   
+   <topic name = "rolamento">
+       <category>
+            <pattern> SIM * </pattern>
+            <template>
+                 Então tempos que trocar o rolamento!
+            </template>
+            </category>
+        <category>
+            <pattern> SIM </pattern>
+            <template>
+                 Então tempos que trocar o rolamento!
+            </template>
+        </category>
+        <category>
+            <pattern> NAO * </pattern>
+            <template>
+                 Então o problema deve ser em outro lugar!
+            </template>
+        </category>
+        <category>
+            <pattern> NAO </pattern>
+            <template>
+                 Então o problema deve ser em outro lugar!
+            </template>
+        </category>
+   </topic>
+   <topic name = "preço">
+       
+   </topic>
+</aiml>
